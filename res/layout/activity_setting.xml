@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobilesafe="http://schemas.android.com/apk/res/com.yc.mobilesafeguard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="Setting"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <com.yc.mobilesafeguard.ui.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        mobilesafe:desc_off="Automatically check for update off"
+        mobilesafe:desc_on="Automatically check for update on"
+        mobilesafe:title="Automatically check for update" />
+    
+      <com.yc.mobilesafeguard.ui.SettingItemView
+        android:id="@+id/siv_black_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        mobilesafe:desc_off="Black number off"
+        mobilesafe:desc_on="Black number on"
+        mobilesafe:title="Black number setting" />
+
+    <com.yc.mobilesafeguard.ui.SettingItemView
+        android:id="@+id/siv_location_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        mobilesafe:desc_off="show phone number location off"
+        mobilesafe:desc_on="show phone number location on"
+        mobilesafe:title="Show phone number location" />
+
+    <com.yc.mobilesafeguard.ui.SettingClickView
+        android:id="@+id/scv_select_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        mobilesafe:desc_off="show phone number location off"
+        mobilesafe:desc_on="show phone number location on"
+        mobilesafe:title="select location display theme" />
+    
+        <com.yc.mobilesafeguard.ui.SettingItemView
+        android:id="@+id/siv_watchdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        mobilesafe:desc_off="lock off"
+        mobilesafe:desc_on="lock  on"
+        mobilesafe:title="app lock setting" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:gravity="center"
+        android:background="#8866ff00"
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text="ADVANCE TOOL"
+        />
+	
+    <TextView 
+        android:onClick="numberQuery"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawableLeft="@android:drawable/sym_action_call"
+        android:text="Phone number location"
+        />
+    
+     <TextView 
+        android:onClick="smsBackup"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawableLeft="@android:drawable/sym_action_call"
+        android:text="Backup SMS"
+        />
+      <TextView 
+        android:onClick="smsRestore"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawableLeft="@android:drawable/sym_action_call"
+        android:text="Restore SMS"
+        />
+</LinearLayout>
